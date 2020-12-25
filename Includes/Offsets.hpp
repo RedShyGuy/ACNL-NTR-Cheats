@@ -460,11 +460,18 @@
 #define     JAP_ECHOTHEMUSIC                    0x1B11CC //Also JPN WA
 #define     USA_WA_ECHOTHEMUSIC                 0x1B0CB4
 
-#define     USA_TPOSE		                    0x73C290
-#define     EUR_TPOSE		                    0x73B298
-#define     JAP_TPOSE		                    0x73AA30
-#define     USA_WA_TPOSE		                0x73B5D8
-#define     EUR_WA_TPOSE	                    0x73B270
-#define     JAP_WA_TPOSE		                0x73AA08
+#define     USA_TPOSE		                        0x73C290
+#define     EUR_TPOSE		                        0x73B298
+#define     JAP_TPOSE		                        0x73AA30
+#define     USA_WA_TPOSE		                    0x73B5D8
+#define     EUR_WA_TPOSE	                      0x73B270
+#define     JAP_WA_TPOSE		                    0x73AA08
+
+#define     USA_INVPOINTER		                  0x98D500
+#define     EUR_INVPOINTER		                  0x98C500      
+#define     JAP_INVPOINTER		                  0x986500      
+#define     USA_WA_INVPOINTER		                0x98C500    
+#define     EUR_WA_INVPOINTER	                  0x98C500    
+#define     JAP_WA_INVPOINTER                   0x985500
 
 #endif
