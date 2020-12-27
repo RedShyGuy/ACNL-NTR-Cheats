@@ -119,19 +119,6 @@ namespace CTRPluginFramework
 
         // Initialize game's addresses based on region
         Game::Initialize();
-		
-        //Launch Updater
-        httpcInit(0);
-        if(launchUpdater())
-        {
-            httpcExit();
-            ptmSysmInit();
-            MessageBox("The update has been installed.\nYour 3DS will now be restarted.")();
-            PTMSYSM_RebootAsync(0);
-            ptmSysmExit();
-            return 0;
-        }
-        httpcExit();
 
         // Initialize player
         Player::GetInstance();
@@ -360,10 +347,7 @@ namespace CTRPluginFramework
             }),
             new MenuEntry("Corrupter", Corrupter, CorrupterSettings, "WARNING!\nThis corrupts random values in memory to cause funny side effects.\nUse at own risk!"),
             new MenuEntry("Pick Every Tour",  EnableAllTours, "Enabling this cheat lets you pick every tour from the tour list!"),
-            EntryWithHotkey(new MenuEntry("Amiibo Spoofer", AmiiboSpoof, "Press hotkey to choose from the list of Villager Categories, (Default: " FONT_R ")\nCredits to Slattz and Scotline for the cheat."),
-            {
-                Hotkey(Key::R, "Open Villager Categories List")
-            }),
+            new MenuEntry("Amiibo Spoofer (NEW)", AmiiboSpoofer, "Enabling this cheat allows you to spoof an amiibo and works everywhere.\nWhen you go to scan an amiibo, a menu will automatically pop up, allowing you pick the amiibo.\nCredits to Slattz for the cheat."),
             EntryWithHotkey(new MenuEntry("Emote ID changer", UseAnyEmote, "Press the hotkey to open a keyboard to patch the game's emotes.\n0xFF restores the game's original code.\nOriginal cheat by 0ICED0, adapted by Slattz."),
                 {Hotkey(Key::R | Key::B, "Change Button Activator")}),
             EntryWithHotkey(new MenuEntry("Edit Every Pattern", EditAnyPattern, "Press the hotkey to enable/disable.\nCredits to Slattz for the cheat"),
