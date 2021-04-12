@@ -1,5 +1,4 @@
 #include "MiniGame.hpp"
-#include "Helpers/Strings.hpp"
 #include "CTRPluginFramework/Graphics/OSD.hpp"
 #include "CTRPluginFramework/Menu/MessageBox.hpp"
 #include "CTRPluginFramework/Utils/Utils.hpp"

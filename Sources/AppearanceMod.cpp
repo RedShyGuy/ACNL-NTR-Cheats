@@ -175,7 +175,7 @@ namespace CTRPluginFramework
             // Check the value
             if (in < 0x2495 || in > 0x26F5)
             {
-                error = "The value must be between " + Hex((u16)0x2495) + " - "  + Hex((u16)0x26F5);
+                error = Utils::Format("The value must be between %04X - %04X", 0x2495, 0x26F5);
                 // Return that the value isn't valid
                 return (false);
             }
@@ -208,7 +208,7 @@ namespace CTRPluginFramework
 
             if (in < 0x280B || in > 0x28F3)
             {
-                error = "The value must be between " + Hex((u16)0x280B) + " - "  + Hex((u16)0x28F3);
+                error = Utils::Format("The value must be between %04X - %04X", 0x280B, 0x28F3);
                 return (false);
             }
             return (true);
@@ -228,7 +228,7 @@ namespace CTRPluginFramework
 
             if (in < 0x28F5 || in > 0x295B)
             {
-                error = "The value must be between " + Hex((u16)0x28F5) + " - "  + Hex((u16)0x295B);
+                error = Utils::Format("The value must be between %04X - %04X", 0x28F5, 0x295B);
                 return (false);
             }
             return (true);
@@ -249,7 +249,7 @@ namespace CTRPluginFramework
 
             if (in < 0x26F8 || in > 0x2776)
             {
-                error = "The value must be between " + Hex((u16)0x26F8) + " - "  + Hex((u16)0x2776);
+                error = Utils::Format("The value must be between %04X - %04X", 0x26F8, 0x2776);
                 return (false);
             }
             return (true);
@@ -269,7 +269,7 @@ namespace CTRPluginFramework
 
             if (in < 0x2777 || in > 0x279E)
             {
-                error = "The value must be between " + Hex((u16)0x2777) + " - "  + Hex((u16)0x279E);
+                error = Utils::Format("The value must be between %04X - %04X", 0x2777, 0x279E);
                 return (false);
             }
             return (true);
@@ -289,7 +289,7 @@ namespace CTRPluginFramework
 
             if (in < 0x279F || in > 0x27E5)
             {
-                error = "The value must be between " + Hex((u16)0x279F) + " - "  + Hex((u16)0x27E5);
+                error = Utils::Format("The value must be between %04X - %04X", 0x279F, 0x27E5);
                 return (false);
             }
             return (true);
